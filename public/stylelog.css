@@ -1,0 +1,71 @@
+/* Stile generale */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenitore del login */
+.login-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Titolo del login */
+.login-container h2 {
+    color: #075e54; /* Colore WhatsApp */
+    margin-bottom: 20px;
+}
+
+/* Modulo di login */
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input del modulo */
+#login-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Focus sugli input */
+#login-form input:focus {
+    border-color: #075e54; /* Colore WhatsApp */
+}
+
+/* Pulsante di login */
+#login-form button {
+    padding: 10px;
+    border: none;
+    background-color: #075e54; /* Colore WhatsApp */
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+    background-color: #128c7e; /* Colore WhatsApp */
+}
+
+/* Messaggio di errore */
+#error-message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: red;
+    display: none;  /* inizialmente nascosto */
+}

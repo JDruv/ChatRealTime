@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "4bcffdd7-941f-47d7-89ee-6445b8dc399f",
+    "username": "druv",
+    "password": "$2b$10$8qzF2XjgsYeO8Q7DmCnFKO3PGPViWJ17r/H6Xwl2pccjPGrR1vl96",
+    "createdAt": "2026-03-23T16:21:31.384Z",
+    "updatedAt": "2026-03-23T16:21:31.385Z"
+  },
+  {
+    "_id": "029cc515-606b-477b-946d-e387ec0f1235",
+    "username": "druv02",
+    "password": "$2b$10$S5xWyfn8c2taLdPEjZvcR.sHUGkaM5U3.jH9FiBKssoK1j0FLQ3gW",
+    "createdAt": "2026-03-23T16:22:46.786Z",
+    "updatedAt": "2026-03-23T16:22:46.786Z"
+  }
+]

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="chat-container">
+        <div class="chat-header">
+            <p id="username-placeholder"></p>
+            <h3>Chat</h3>
+            <button id="logout">Esci</button>
+        </div>
+        <div id="chat-messages" class="chat-messages"></div>
+        <button id="send">Invia</button>
+        <input type="text" id="message" placeholder="Scrivi un messaggio">
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@4.0.0/dist/socket.io.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

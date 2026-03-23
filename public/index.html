@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Web Chat</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- AUTH VIEW -->
+  <div id="auth-view" class="view-container active">
+    <div class="glass-panel auth-panel">
+      <div class="logo">💬<span>RealTime</span></div>
+      <h2>Welcome Back</h2>
+      <p>Log in to your account or register a new one to join the conversation.</p>
+      
+      <form id="auth-form">
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter username" required autocomplete="off">
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" required>
+        </div>
+        
+        <div class="auth-buttons">
+          <button type="submit" id="login-btn" class="btn primary">Login</button>
+          <button type="button" id="register-btn" class="btn secondary">Register</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- CHAT VIEW -->
+  <div id="chat-view" class="view-container">
+    <div class="glass-panel chat-panel">
+      <!-- Chat Header -->
+      <header class="chat-header">
+        <div class="header-info">
+          <h3>Global Chat</h3>
+          <span class="status online">● Online</span>
+        </div>
+        <button id="logout-btn" class="btn outline">Logout</button>
+      </header>
+
+      <!-- Chat Messages -->
+      <div class="chat-messages" id="chat-messages">
+        <!-- Messages will be injected here -->
+      </div>
+
+      <!-- Typing Indicator -->
+      <div id="typing-indicator" class="typing-indicator hidden">
+        <span id="typing-user">Someone</span>&nbsp;is typing
+        <div class="dots">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <!-- Chat Input -->
+      <footer class="chat-footer">
+        <form id="chat-form">
+          <input type="text" id="message-input" placeholder="Type a message..." autocomplete="off">
+          <button type="submit" id="send-btn" class="btn primary send-btn">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z" fill="currentColor"/>
+            </svg>
+          </button>
+        </form>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- Main module points to our logical splits -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
