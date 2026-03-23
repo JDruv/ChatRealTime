@@ -61,4 +61,6 @@ Dato l'approccio "Batteries Included" del repository, per avviare il mio progett
 
 ## visuale app
 
+![immagine 1](/screen/Screen1)
 
+![immagine 2](./img/image_5ac7bf.png)
