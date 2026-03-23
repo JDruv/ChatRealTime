@@ -59,6 +59,12 @@ Dato l'approccio "Batteries Included" del repository, per avviare il mio progett
    *(oppure `node server/server.js`)*.
 5. Apri **[http://localhost:3000](http://localhost:3000)** dal tuo browser preferito. (Ti consiglio di aprire due finestre vicine o una normale e una in Incognito, per loggarti con due account differenti e goderti la reattività della Chat!).
 
+<<<<<<< HEAD
 ![immagine 1](/)
 
 ![immagine 2](./img/image_5ac7bf.png)
+=======
+## visuale app
+
+
+>>>>>>> 43e23e415e9be234173b5909f5fbcbfca0c95e03
